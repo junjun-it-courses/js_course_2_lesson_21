@@ -1,3 +1,6 @@
+'use strict'
+
+// https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Function/apply
 // Метод apply() вызывает функцию с указанным значением this и аргументами,
 // предоставленными в виде массива
 
@@ -10,9 +13,10 @@ let someArrayOfArguments = [200, 100];
 
 
 function example(a, b) {
+    console.log(arguments)
     console.log(this, a, b);
 }
 
 // example(100, 200);
-example.apply(someObj, someArrayOfArguments)
-// example.apply(someObj, ['str1', 'str2'])
+// example.apply(someObj, someArrayOfArguments)
+example.apply(someObj, ['str1', 'str2', 'str3', 'str4'])

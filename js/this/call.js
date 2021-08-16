@@ -7,12 +7,13 @@
 // }
 //
 // function example(a, b) {
+//     console.log(arguments)
 //     console.log(this, a, b);
 // }
 //
 // // example(1, 2);
 //
-example.call(someObj, 200, 100)
+// example.call(someObj, 200, 100, 300, 400)
 
 
 // В качестве первого аргумента методов call может быть передан объект,
@@ -28,9 +29,10 @@ example.call(someObj, 200, 100)
 //     return this.a;  //значение this зависит от контекста вызова функции
 //
 // }
-//
+
 // console.log(whatsThis());          // 'Global'
 // console.log(whatsThis.call(obj));  // 'Custom'
+// console.log(whatsThis(obj))
 
 
 // function add(c, d) {

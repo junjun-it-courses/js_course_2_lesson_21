@@ -18,5 +18,5 @@ const exampleWithContext = example.bind(someObj, 'string1', 'string2');
 
 exampleWithContext();
 example();
-
+//
 console.log(exampleWithContext === example)
